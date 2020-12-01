@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="top">
+            <p>Belépés</p>
+            <p>Regisztráció</p>
+        </div>
+        <nav>
+            <img src="./img/logo_wh.png" alt="novo parts trade logo" id="logo">
+            <div class="menu">
+                <i class="fas fa-search"></i>
+                <a href="" class="link">WEBÁRUHÁZ</a>
+                <a href="" class="link">INFORMÁCIÓ</a>
+                <a href="" class="link">KAPCSOLAT</a>
+                <a href="" class="link">DARTS</a>
+                <a href="" class="link">BILIÁRD</a>
+                <a href="" class="link">CSOCSÓ</a>
+                <a href="" class="link">PÓKER</a>
+                <a href="" class="link">SZERVIZ</a>
+                <a href="" class="link">KIOSK</a>
+            </div>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+        <div class="search-container">
+            <div class="checkbox">
+                <label class="container">Minden kategória
+                    <input type="checkbox" onClick="toggle(this)">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container">Automata alkatrész
+                    <input type="checkbox" name="foo" value="1">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container">Bankkártya, chipkártya olvasó
+                    <input type="checkbox" name="foo" value="2">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container">Érintő szenzorok
+                    <input type="checkbox" name="foo" value="3">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container">Érme- bankjegyszámláló
+                    <input type="checkbox" name="foo" value="4">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container">Ipari monitor, érintőképernyő
+                    <input type="checkbox" name="foo" value="5">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container">KIOSK
+                    <input type="checkbox" name="foo" value="6">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container">Pénzváltógép
+                    <input type="checkbox" name="foo" value="7">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container">Ping-pong felszerelés
+                    <input type="checkbox" name="foo" value="8">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container">Printerek
+                    <input type="checkbox" name="foo" value="9">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+            <form action="/action_page.php">
+                <input type="text" placeholder="Keresés..." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+            <button class="close">X</button>
+        </div>
+    </header>
+    <div class="main">
+        <div class="container">
+            <div class="card">
+                <h2 class="name">NOVO PARTS</h2>
+                <a href="https://novoparts.hu/hu/" class="go">Megnézem</a>
+                <div class="circle"></div>
+                <a href="https://novoparts.hu/hu/"><img src="./img/novoparts.png" alt="novoparts" class="pic"></a>
+            </div>
+            <div class="card">
+                <h2 class="name">GAMECENTER</h2>
+                <a href="https://gamecenter.hu/hu/" class="go">Megnézem</a>
+                <div class="circle"></div>
+                <a href="https://gamecenter.hu/hu/"><img src="./img/gamecenter.png" alt="gamecenter" class="pic"></a>
+            </div>
+            <div class="card">
+                <h2 class="name">SZERVIZ</h2>
+                <a href="https://szerviz.novoparts.hu/" class="go">Megnézem</a>
+                <div class="circle"></div>
+                <a href="https://szerviz.novoparts.hu/"><img src="./img/szerviz.png" alt="szerviz" class="pic"></a>
+            </div>
+            <div class="card">
+                <h2 class="name">KIOSK</h2>
+                <a href="https://kiosk.novoparts.hu/hu/" class="go">Megnézem</a>
+                <div class="circle"></div>
+                <a href="https://kiosk.novoparts.hu/hu/"><img src="./img/kiosk.png" alt="kiosk" class="pic"></a>
+            </div>
+        </div>
+    </div>
+    <div class="text">
+        <h3>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+            into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+            release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+            software like Aldus PageMaker including versions of Lorem Ipsum.
+        </h3>
+    </div>
+    <footer>
+        <div class="contact">
+            <a href="tel:+36202040131">
+                <h2>+36-20-204-0131</h2>
+            </a>
+            <a href="tel:+36205211605">
+                <h2>+36-20-521-1605</h2>
+            </a>
+            <a href="mailto:novoparts@novoparts.hu">
+                <h2>novoparts@novoparts.hu</h2>
+            </a>
+        </div>
+    </footer>
+
+
+
+    <script src="vanilla-tilt.min.js"></script>
+    <script>
+        function toggle(source) {
+  checkboxes = document.getElementsByName('foo');
+  for(var i=0, n=checkboxes.length;i<n;i++) {
+    checkboxes[i].checked = source.checked;
+  }
+}
+
+        const menuSlide = () => {
+            const burger = document.querySelector('.burger');
+            const menu = document.querySelector('.menu');
+
+
+            burger.addEventListener('click', () => {
+                menu.classList.toggle('menu-active');
+
+                burger.classList.toggle('toggle');
+            });
+        }
+        menuSlide();
+
+        const searchFade = () => {
+            const searchIcon = document.querySelector('.fas');
+            const searchBar = document.querySelector('.search-container');
+            const close = document.querySelector('.close');
+
+            searchIcon.addEventListener('click', () => {
+                searchBar.classList.add('search-active');
+            });
+            close.addEventListener('click', () => {
+                searchBar.classList.remove('search-active');
+            });
+        }
+        searchFade();
+
+
+        VanillaTilt.init(document.querySelectorAll(".card"), {
+            max: 20,
+            speed: 400
+        });
+    </script>
+</body>
+
+</html>
